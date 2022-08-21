@@ -1,0 +1,24 @@
+<div class="templates-holder">
+    <div class="templates-left">
+        <div class="template-heading">
+            <h1>Select a Template</h1>
+            <p class="show-saved-link" (click)="redirectToSaved()">View saved templates</p>
+        </div>
+        <div class="template-lists">
+            <div *ngFor="let img of imageListValues, let i = index;" (click)="handleImageSelect(i)" [class]="selectedImageIndex === i ? 'template-image-holder-selected' : 'template-image-holder'">
+                <img [src]="img" alt="Image template" />
+            </div>
+        </div>
+    </div>
+    <form [formGroup]="detailsFormGroup" class="templates-right">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Write Offer Heading</mat-label>
+            <input formControlName="heading" matInput />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Write Offer Discount</mat-label>
+            <input formControlName="offer" matInput />
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="createFinalSubmit()">Proceed</button>
+    </form>
+</div>

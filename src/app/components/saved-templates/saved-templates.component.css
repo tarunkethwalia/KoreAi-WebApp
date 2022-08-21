@@ -1,0 +1,14 @@
+.saved-temp-heading {display: flex; width: 100%; justify-content: space-between; padding: 20px 40px;}
+.nodata-image {width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 40px;}
+.nodata-image img { width: 30%;}
+
+.data-content {width: 100%; padding: 0px 40px;}
+.data-row {width: 100%; display: flex; margin: 30px 0; align-items: center;}
+.nums {width: 5%; font-size: 14px;}
+.imageHolder {width: 10%;}
+.data-row img {width: 100px;}
+.data-row h4 {width: 25%; margin: 0;}
+.data-row h4 b {margin: 0 20px 0 10px;}
+
+.btn-holders button {margin: 0 10px;}
+.show-saved-link {color: rgba(138, 109, 172, 1); font-size: 14px; text-decoration: underline; cursor: pointer;}

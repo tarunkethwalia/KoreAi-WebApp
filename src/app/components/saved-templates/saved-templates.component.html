@@ -1,0 +1,24 @@
+<div class="saved-temp-heading">
+    <h1>Saved Posts</h1>
+    <p class="show-saved-link" (click)="redirectToHome()">Go Back</p>
+</div>
+<div class="nodata-image" *ngIf="savedTemplates.length == 0">
+    <img src="../../../assets/NoData.png" alt="NoData" />
+    <p>Oops.. No saved templates found..!!</p>
+    <button mat-raised-button color="primary" (click)="redirectToHome()">Go Home</button>
+</div>
+
+<div class="data-content" *ngIf="savedTemplates.length !== 0">
+    <div class="data-row" *ngFor="let data of savedTemplates; let i = index;">
+        <span class="nums">{{i + 1}}</span>
+        <div class="imageHolder">
+            <img [src]="imageListValues[data.image]" alt="Image" />
+        </div>
+        <h4><b>Title: </b>{{data.heading}}</h4>
+        <h4><b>Offer: </b>{{data.offer}}</h4>
+        <div class="btn-holders">
+            <button mat-raised-button color="primary" (click)="viewItem(data)">View</button>
+            <button mat-raised-button color="warn" (click)="removeItem(i)">Delete</button>
+        </div>
+    </div>
+</div>

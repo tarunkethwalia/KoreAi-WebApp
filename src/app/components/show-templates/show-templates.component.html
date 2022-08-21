@@ -1,0 +1,16 @@
+<div class="show-temp-holder">
+    <div class="show-temp-left" id="my-node">
+        <div class="show-temp-left-container">
+            <img [src]="imageListValues[savedData.image]" alt="Selected Images" />
+            <div class="absolute-data">
+                <p class="main-heading">{{savedData.heading}}</p>
+                <p>{{savedData.offer}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-temp-right">
+        <button mat-raised-button color="primary" (click)="download()">Download Template</button>
+        <button mat-raised-button color="primary" (click)="saveForFuture()">Save for Future Use</button>
+        <button mat-raised-button color="primary" (click)="backtoHome()">Back to HomePage</button>
+    </div>
+</div>

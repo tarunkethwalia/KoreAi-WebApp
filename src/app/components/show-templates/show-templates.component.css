@@ -1,0 +1,10 @@
+.show-temp-holder {width: 100%; height: 100vh; display: flex;}
+.show-temp-left {display: flex; justify-content: center; align-items: center; width: 70%; height: 100%;}
+.show-temp-left .show-temp-left-container {width: 80%; position: relative;}
+.show-temp-left-container img {width: 100%;}
+.show-temp-left-container .absolute-data {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.absolute-data {display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; text-align: center;}
+.absolute-data .main-heading {font-size: 30px; font-family: 'Poppins', sans-serif;}
+.absolute-data p {font-size: 14px;}
+.show-temp-right {display: flex; justify-content: center; align-items: center; width: 30%; height: 100%; flex-direction: column; box-shadow: 0 -4px 16px rgba(127, 127, 127, 0.6);}
+.show-temp-right button {margin: 20px 0;}

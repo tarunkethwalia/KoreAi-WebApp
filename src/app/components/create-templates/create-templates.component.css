@@ -1,0 +1,14 @@
+.templates-holder {width: 100; height: 100vh; display: flex;}
+.template-heading {display: flex; justify-content: space-between; align-items: center; padding-top: 20px;}
+.templates-left {width: 70%; height: 100%;}
+.templates-right {width: 30%; height: 100%;}
+.templates-left {display: flex; flex-direction: column; padding: 0 40px;}
+.templates-left .template-lists {flex: 1; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;}
+.template-image-holder { width: 30%; height: 30%; box-shadow: 0 4px 10px rgba(127, 127, 127, 0.4); border-radius: 5px; overflow: hidden; transition: .4s;}
+.template-image-holder-selected { width: 30%; height: 30%; box-shadow: 0 4px 10px rgba(138, 109, 172, 0.6); border-radius: 5px; overflow: hidden;}
+.template-image-holder-selected img {width: 100%; height: 100%;}
+.template-image-holder:hover {cursor: pointer; box-shadow: 0 4px 10px rgba(127, 127, 127, 0.8);}
+.template-image-holder img {width: 100%; height: 100%;}
+.templates-right {display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 -4px 16px rgba(127, 127, 127, 0.6); background-color: white}
+.templates-right mat-form-field {width: 80%; background-color: white; margin: 10px 0;}
+.show-saved-link {color: rgba(138, 109, 172, 1); font-size: 14px; text-decoration: underline; cursor: pointer;}
